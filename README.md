@@ -1,4 +1,4 @@
-# Diagrama-sistema-biblioteca
+# Diagrama Sistema Biblioteca
 Un diagrama de clases UML es el plano visual y estructural que define de forma clara las clases, atributos, métodos, multiplicidades y tipos de relaciones de un sistema , actuando como el puente directo entre la abstracción conceptual y la implementación física en la programación orientada a objetos.
 
 # S35 EA1 Diagrama de clases Biblioteca
