@@ -7,10 +7,14 @@ Diagrama de clases UML del sistema de biblioteca - S35 - EA1. Diagrama de clases
 ## Datos 
 
 Xiomy Libey Manco Manco.
+cc 11017206460
 
 Cristian Alexander Gomez Tangarife.
+cc 1038540597
 
-Julian Andres Muñoz Ospina
+Julian Andres Muñoz Ospina.
+cc 1193132630
+
 
 Grupo: PREICA2602B010093
 
