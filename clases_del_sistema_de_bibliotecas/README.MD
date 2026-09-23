@@ -35,4 +35,3 @@ Julian Andres Muñoz Ospina. CC 1193132630
 - Código fuente del sistema desarrollado en Java.
 - Clases correspondientes al diagrama de clases.
 - Clase `Main` para ejecutar y probar el funcionamiento del sistema.
-- Informe en PDF de la actividad.
