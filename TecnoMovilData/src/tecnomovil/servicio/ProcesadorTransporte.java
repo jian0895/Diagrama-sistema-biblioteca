@@ -23,3 +23,14 @@ public class ProcesadorTransporte {
                         RegistroTransporte::getEstacion,
                         Collectors.counting()));
     }
+
+    // Rutas más utilizadas
+    public Map<String, Long> obtenerRutasMasUtilizadas(
+            List<RegistroTransporte> registros) {
+
+        return registros.stream()
+
+                .collect(Collectors.groupingBy(
+                        RegistroTransporte::getRuta,
+                        Collectors.counting()));
+    }
