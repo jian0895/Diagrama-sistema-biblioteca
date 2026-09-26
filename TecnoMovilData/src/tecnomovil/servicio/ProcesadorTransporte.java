@@ -9,4 +9,17 @@ import java.util.stream.Collectors;
 
 import tecnomovil.modelo.RegistroTransporte;
 
-public class ProcesadorTransporte
+public class ProcesadorTransporte {
+
+    // Afluencia por estación
+    public Map<String, Long> calcularAfluenciaPorEstacion(
+            List<RegistroTransporte> registros) {
+
+        return registros.stream()
+
+                .filter(registro -> registro.getAccion().equalsIgnoreCase("entrada"))
+
+                .collect(Collectors.groupingBy(
+                        RegistroTransporte::getEstacion,
+                        Collectors.counting()));
+    }
