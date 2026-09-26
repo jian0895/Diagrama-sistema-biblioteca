@@ -45,3 +45,17 @@ public class ProcesadorTransporte {
                         registro -> registro.getTimestamp().getHour(),
                         Collectors.counting()));
     }
+
+    // Patrones de viaje
+    public Map<Integer, List<String>> obtenerPatronesViaje(
+            List<RegistroTransporte> registros) {
+
+        return registros.stream()
+
+                .collect(Collectors.groupingBy(
+                        RegistroTransporte::getIdUsuario,
+
+                        Collectors.mapping(
+                                RegistroTransporte::getEstacion,
+                                Collectors.toList())));
+    }
