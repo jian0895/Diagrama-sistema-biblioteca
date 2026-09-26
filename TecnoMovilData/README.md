@@ -1,6 +1,10 @@
-# TecnoMovil Data
+# TecnoMovil Data - Programación Funcional
 
-# F30- EA3. Programación Funcional
+## Descripción
+
+Proyecto desarrollado para la Evidencia de Aprendizaje 3 de Programación Funcional de la Institución Universitaria Digital de Antioquia.
+
+El proyecto implementa un módulo funcional en Java para procesar registros simulados de un sistema de transporte urbano.
 
 ## Integrantes
 
@@ -25,12 +29,24 @@ Programación II: Orientada a Objetos Avanzada
 
 Fecha: 27 de septiembre del 2026
 
-## El propósito de esta actividad:
+## Funcionalidades
 
-Aplicar conceptos de programación funcional en un escenario realista.
+El programa permite:
 
-Comprender cómo manejar grandes cantidades de datos de manera declarativa.
+1. Calcular la afluencia por estación.
+2. Identificar las horas pico.
+3. Determinar las rutas más utilizadas.
+4. Generar patrones de viaje por usuario.
+5. Calcular el tiempo promedio entre estaciones.
+6. Detectar rutas críticas según un umbral de ocupación.
 
-Experimentar con funciones puras, lambdas y operaciones de alto orden.
+## Conceptos aplicados
 
-Creación de un repositorio en GitHub y alojar en la rama principal (Main - master) la solución del caso de estudio propuesto.
+- Programación funcional
+- Funciones puras
+- Inmutabilidad
+- Expresiones Lambda
+- Streams
+- Funciones de orden superior
+- Composición de operaciones
+- Colecciones
