@@ -59,3 +59,25 @@ public class ProcesadorTransporte {
                                 RegistroTransporte::getEstacion,
                                 Collectors.toList())));
     }
+
+    // Rutas críticas
+    public Set<String> detectarRutasCriticas(
+            List<RegistroTransporte> registros,
+            long umbral) {
+
+        return registros.stream()
+
+                .collect(Collectors.groupingBy(
+                        RegistroTransporte::getRuta,
+                        Collectors.counting()))
+
+                .entrySet()
+
+                .stream()
+
+                .filter(ruta -> ruta.getValue() > umbral)
+
+                .map(ruta -> ruta.getKey())
+
+                .collect(Collectors.toSet());
+    }
