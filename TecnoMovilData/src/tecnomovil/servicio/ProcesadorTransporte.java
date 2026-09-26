@@ -34,3 +34,14 @@ public class ProcesadorTransporte {
                         RegistroTransporte::getRuta,
                         Collectors.counting()));
     }
+
+    // Horas pico
+    public Map<Integer, Long> obtenerHorasPico(
+            List<RegistroTransporte> registros) {
+
+        return registros.stream()
+
+                .collect(Collectors.groupingBy(
+                        registro -> registro.getTimestamp().getHour(),
+                        Collectors.counting()));
+    }
